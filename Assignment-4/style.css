@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body
+{
+    height: 100%;
+    width: 100%;
+}
+
+#main
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main img
+{
+    height: 72vh;
+    width: 28vw;
+    z-index: 99;
+}
+
+#scroll-div
+{
+    position: absolute;
+    top: 26%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y: hidden;
+}
+
+#scroll-div h1
+{
+    display: inline-block;
+    font-size: 7vw;
+    font-family: monument;
+    text-transform: uppercase;
+    margin-right: 0.1vw;
+    animation-name: scroll;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroll-div::-webkit-scrollbar
+{
+    display: none;
+}
+
+#scroll-div2
+{
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y: hidden;
+    z-index: 100;
+}
+
+#scroll-div2 h1
+{
+    display: inline-block;
+    font-size: 7vw;
+    font-family: monument;
+    text-transform: uppercase;
+    margin-right: 0.1vw;
+    color: transparent;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+    animation-name: scroll;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroll-div2::-webkit-scrollbar
+{
+    display: none;
+}
+
+#scroll-div3
+{
+    position: absolute;
+    top: 63%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y: hidden;
+}
+
+#scroll-div3 h1
+{
+    display: inline-block;
+    font-size: 7vw;
+    font-family: monument;
+    text-transform: uppercase;
+    margin-right: 0.1vw;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+
+}
+
+#scroll-div3::-webkit-scrollbar
+{
+    display: none;
+}
+
+#text
+{
+    font-size: 1.8vw;
+    position: absolute;
+    font-family: monument;
+    width: 44%;
+    top: 18%;
+    text-transform: uppercase;
+    z-index: 999;
+    text-align: center;
+}
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(calc(-100% - 1.5px));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width:600px) 
+{
+    #main img {
+        height: 40vh;
+        width: 54vw;
+        z-index: 99;
+    }
+    #text {
+        font-size: 2.8vw;
+        position: absolute;
+        font-family: monument;
+        width: 66%;
+        top: 31%;
+        text-transform: uppercase;
+        z-index: 999;
+        text-align: center;
+    }
+    #scroll-div {
+        position: absolute;
+        top: 37%;
+        width: 100%;
+        height: 8vh;
+    }
+    #scroll-div h1 {
+        display: inline-block;
+        font-size: 14vw;
+        margin-right: 0.2vw;
+    }
+    #scroll-div2 {
+        position: absolute;
+        top: 47%;
+        width: 100%;
+        height: 8vh;
+        background-color: rgb(254, 250, 250);
+    }
+    #scroll-div2 h1 {
+        display: inline-block;
+        font-size: 14vw;
+        margin-right: 0.2vw;
+    }
+    #scroll-div3 {
+        position: absolute;
+        top: 57%;
+        width: 100%;
+        height: 8vh;
+    }
+    #scroll-div3 h1 {
+        display: inline-block;
+        font-size: 14vw;
+        margin-right: 0.2vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#nav
+{
+    width: 100%;
+    height: 12vh;
+    padding: 0vh 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-prt2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 3vw;
+}
+
+#nav h4
+{
+    font-size: 2.5vw;
+    color: red;
+}
+
+#nav-prt2 h5
+{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#nav-prt2 h6
+{
+    font-size: 1vw;
+    font-weight: 100;
+    margin-left: 6vw;
+    padding-right: 2vw;
+    text-transform: uppercase;
+}
+
+#main h5
+{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#content
+{
+    width: 100%;
+    height: calc(100% - 12vh);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0vh 1vw;
+}
+
+#part1
+{
+    width: 40%;
+    height: 100%;
+    padding-left: 4.5vw;
+    padding-right: 2vw;
+}
+
+#part2
+{
+    width: 30%;
+    height: 100%;
+    background-color: blueviolet;
+    background-image: url(/hh.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
+
+#part3
+{
+    width: 30%;
+    height: 100%;
+    padding: 2vh 7vw;
+}
+
+#part3 h4
+{
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding-bottom: 2.5vh;
+}
+
+#part3 img
+{
+    width: 94%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+#part3 span
+{
+    color: red;
+}
+
+#part1 h1
+{
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 5.5vh;
+    padding-left: 3.5vw;
+    padding-bottom: 3vh;
+    padding-top: 12vh;
+}
+#part1 span
+{
+    color: red;
+    font-size: 3vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 5.5vh;
+}
+
+#part1 img
+{
+    position: absolute;
+    height: 38vh;
+    top: 50%;
+    opacity: 0.7;
+}
+
+#inprt1
+{
+    position: absolute;
+    left: 21vw;
+    top: 55%;
+    padding-left: 1vw;
+}
+
+#inprt1 h4
+{
+    font-size: 1.5vw;
+    font-weight: 200;
+    line-height: 2vh;
+    padding-bottom: 2.5vh;
+    text-transform: uppercase;
+}
+
+#inprt1 h6
+{
+    font-size: 1.1vw;
+    font-weight: 100;
+    padding-bottom: 0.5vh;
+    opacity: 0.4;
+}
+
+
+#inprt1 span
+{
+    font-size: 1.5vw;
+}
+
+
+@media (max-width:600px) 
+{
+    #nav {
+        width: 100%;
+        height: 8vh;
+    }
+    #nav h4 {
+        font-size: 4vw;
+        color: red;
+    }
+    #main h5 {
+        font-size: 1.8vw;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    #nav-prt2 h6 {
+        font-size: 1.6vw;
+        font-weight: 400;
+        margin-left: 6vw;
+        padding-right: 2vw;
+        text-transform: uppercase;
+    }
+    #content {
+        flex-direction: column;
+
+    }
+    #part1 {
+        width: 45%;
+        height: 100%;
+        padding-left: 1.5vw;
+    }
+    #part1 h1 {
+        font-size: 6vw;
+        font-weight: 900;
+        line-height: 3.5vh;
+        padding-left: 0vw;
+        padding-bottom: 3vh;
+        padding-top: 15vh;
+        color: rgb(214, 214, 153);
+    }
+    #part1 span {
+        color: red;
+        font-size: 6vw;
+        font-weight: 900;
+        line-height: 3.5vh;
+    }
+    #part1 img {
+        position: absolute;
+        height: 30vh;
+        width: 40vw;
+        top: 60%;
+        opacity: 0.7;
+    }
+    #inprt1 {
+        position: absolute;
+        left: 44vw;
+        top: 84%;
+        padding-left: 0vw;
+    }
+    #inprt1 h4 {
+        font-size: 2vw;
+        font-weight: 600;
+        line-height: 0vh;
+        padding-bottom: 0vh;
+        text-transform: uppercase;
+        color: rgb(214, 214, 153);
+    }
+    #inprt1 span {
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    #inprt1 h6 {
+        font-size: 1.6vw;
+        font-weight: 500;
+        padding-bottom: 0.3vh;
+        opacity: 0.8;
+    }
+    #part2 {
+        width: 55%;
+        height: 55%;
+        padding-right: 1.5vw;
+        opacity: 0.5;
+    }
+    
+    #part3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding-top: 48vh;
+        padding-left: 60vw;
+    }
+    #part3 h4 {
+        font-size: 3vw;
+        text-transform: uppercase;
+        line-height: 2vh;
+        padding-bottom: 1.5vh;
+        color: rgb(214, 214, 153);
+    }
+    #part3 span {
+        color: red;
+        font-size: 3vw;
+        line-height: vh;
+        padding-bottom: 1.5vh;
+    }
+    #part3 img {
+        width: 115%;
+        height: 80%;
+        opacity: 0.9;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

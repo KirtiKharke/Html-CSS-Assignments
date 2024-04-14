@@ -1,0 +1,64 @@
+.thumbnail
+{
+    width: 100%;
+}
+.search-bar
+{
+    display: block;
+}
+.video-title
+{
+    font-size: 7px;
+    font-weight: 600;
+    line-height: 10px;
+    margin-bottom: 8px;
+}
+
+.video-author,
+.video-stats
+{
+   font-size: 6px;
+   margin-bottom: 2px;
+   opacity: 0.7;
+}
+
+
+.thumbnail-row
+{
+    margin-bottom: 2px;
+    position: relative;
+}
+.video-time
+{
+    font-size: 6px;
+    padding: 2px 2px;
+    color: white;
+    position: absolute;
+    bottom: 7px;
+    right: 3px;
+    font-weight: 600;
+    background-color: black;
+}
+
+.profile-picture
+{
+    width: 20px;
+    border-radius: 50px;
+}
+
+.video-info-grid
+{
+    display: grid;
+    grid-template-columns: 27px 1fr ;
+}
+
+.video-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 12px;
+}
+
+
+
